@@ -1,9 +1,14 @@
 First Line!!
 2nd Line!!
 Third Line!!
-<<<<<<< HEAD
-fourth Line!!
-||||||| 2b812aa
-=======
+Fourth Line!!
 Fifth Line!!
->>>>>>> dev
+Sixth Line!!
+Seventh Line!!
+<<<<<<< HEAD
+||||||| parent of 9e91c7d (ninth commit)
+Eigth Line!!
+=======
+Eigth Line!!
+Ninth Line!!
+>>>>>>> 9e91c7d (ninth commit)
