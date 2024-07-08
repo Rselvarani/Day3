@@ -18,13 +18,13 @@ jobs:
     - name: Run issue-metrics tool
       uses: github/issue-metrics@v3
       env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SEARCH_QUERY: 'repo:owner/repo is:issue created:2024-05-01..2024-07-08 -reason:"not planned"'
+        GH_TOKEN: ${{ secrets.issue_check }}
+        SEARCH_QUERY: 'repo:Rselvarani/Day3 is:issue created:2024-05-01..2024-07-08 -reason:"not planned"'
 
     - name: Create issue
       uses: peter-evans/create-issue-from-file@v4
       with:
         title: Monthly issue metrics report
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.issue_check }}
         content-filepath: ./issue_metrics.md
         assignees: Rselvarani
